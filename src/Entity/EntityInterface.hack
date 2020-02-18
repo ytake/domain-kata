@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,17 +10,7 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Repository\Operation;
+namespace Ytake\HackDomainKata\Entity;
 
-use PHPMentors\DomainKata\Entity\CriteriaInterface;
-
-/**
- * @since Interface available since Release 1.2.0
- */
-interface CriteriaBuilderInterface extends CriteriaInterface, OperationInterface
-{
-    /**
-     * @return CriteriaInterface
-     */
-    public function build();
+interface EntityInterface {
 }

@@ -1,6 +1,6 @@
-<?php
 /*
- * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ * Copyright (c) 2015 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,8 +10,10 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Entity;
+namespace Ytake\HackDomainKata\Service;
 
-interface EntityInterface
-{
+/**
+ * @since Interface available since Release 1.4.0
+ */
+interface ServiceInterface {
 }

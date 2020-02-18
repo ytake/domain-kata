@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,12 +10,13 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Entity;
+namespace Ytake\HackDomainKata\Specification;
 
-interface SingleValueInterface extends EntityInterface
-{
-    /**
-     * @return mixed
-     */
-    public function getValue();
+use type Ytake\HackDomainKata\Entity\EntityInterface;
+
+interface SpecificationInterface {
+
+  public function isSatisfiedBy(
+    EntityInterface $entity
+  ): bool;
 }

@@ -1,6 +1,6 @@
-<?php
 /*
- * Copyright (c) 2015 GOTO Hidenori <hidenorigoto@gmail.com>,
+ * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,15 +10,10 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Entity\Operation;
+namespace Ytake\HackDomainKata\Operation;
 
 /**
- * @since Interface available since Release 1.4.0
+ * @since Interface available since Release 1.2.0
  */
-interface IdentifiableInterface extends OperationInterface
-{
-    /**
-     * @return mixed
-     */
-    public function getId();
+interface OperationInterface {
 }

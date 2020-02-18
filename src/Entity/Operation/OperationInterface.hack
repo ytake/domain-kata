@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,8 +10,11 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Entity;
+namespace Ytake\HackDomainKata\Entity\Operation;
 
-interface CriteriaInterface extends EntityInterface
+/**
+ * @since Interface available since Release 1.1.0
+ */
+interface OperationInterface extends \Ytake\HackDomainKata\Operation\OperationInterface
 {
 }

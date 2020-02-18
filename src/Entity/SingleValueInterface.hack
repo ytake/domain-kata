@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,16 +10,9 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Usecase;
+namespace Ytake\HackDomainKata\Entity;
 
-use PHPMentors\DomainKata\Entity\EntityInterface;
+interface SingleValueInterface<T> extends EntityInterface {
 
-interface UsecaseInterface
-{
-    /**
-     * @param EntityInterface $entity
-     *
-     * @return mixed
-     */
-    public function run(EntityInterface $entity);
+  public function getValue(): T;
 }

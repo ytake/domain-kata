@@ -3,3 +3,5 @@
 /composer.phar
 /php-cs-fixer.phar
 /vendor/
+.vscode
+*.hhast.parser-cache

@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,16 +10,11 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Specification;
+namespace Ytake\HackDomainKata\Usecase;
 
-use PHPMentors\DomainKata\Entity\EntityInterface;
+use type Ytake\HackDomainKata\Entity\EntityInterface;
 
-interface SpecificationInterface
-{
-    /**
-     * @param EntityInterface $entity
-     *
-     * @return bool
-     */
-    public function isSatisfiedBy(EntityInterface $entity);
+interface UsecaseInterface<T> {
+
+  public function run(EntityInterface $entity): T;
 }

@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 GOTO Hidenori <hidenorigoto@gmail.com>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,19 +10,16 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Entity\Operation;
+namespace Ytake\HackDomainKata\Entity\Operation;
 
-use PHPMentors\DomainKata\Entity\EntityInterface;
+use type Ytake\HackDomainKata\Entity\EntityInterface;
 
 /**
  * @since Interface available since Release 1.1.0
  */
-interface ComparableInterface extends OperationInterface
-{
-    /**
-     * @param EntityInterface $target
-     *
-     * @return int
-     */
-    public function compareTo(EntityInterface $target);
+interface ComparableInterface extends OperationInterface {
+
+  public function compareTo(
+    EntityInterface $target
+  ): int;
 }

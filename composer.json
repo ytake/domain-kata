@@ -1,5 +1,5 @@
 {
-    "name": "phpmentors/domain-kata",
+    "name": "ytake/hack-domain-kata",
     "type": "library",
     "description": "Kata for domain models",
     "keywords": ["modeling", "design", "architecture", "domain driven design", "ddd", "generative programming"],
@@ -12,19 +12,27 @@
         {
             "name": "GOTO Hidenori",
             "email": "hidenorigoto@gmail.com"
+        },
+        {
+            "name": "TAKEZAWA Yuuki",
+            "email": "yuuki.takezawa@comnect.jp.net"
         }
     ],
     "require": {
-        "php": ">=5.3.3"
+        "hhvm": ">=4.20",
+        "hhvm/hhvm-autoload": "^2.0|^3.0"
     },
+    "require-dev": {
+        "hhvm/hhast": "^4.0"
+      },
     "autoload": {
         "psr-4": {
-            "PHPMentors\\DomainKata\\": "src/"
+            "Ytake\\HackDomainKata\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.5.x-dev"
-        }
+    "scripts": {
+        "register": [
+            "hhvm ./vendor/bin/hh-autoload.hack"
+        ]
     }
 }

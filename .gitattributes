@@ -1,0 +1,6 @@
+.gitattributes export-ignore
+.gitignore export-ignore
+composer.lock export-ignore
+.hhconfig export-ignore
+hhast-lint.json export-ignore
+*.hack linguist-language=Hack

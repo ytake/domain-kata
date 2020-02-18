@@ -1,6 +1,6 @@
-<?php
 /*
- * Copyright (c) 2015 KUBO Atsuhiro <kubo@iteman.jp>,
+ * Copyright (c) 2015 GOTO Hidenori <hidenorigoto@gmail.com>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,11 +10,12 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Service;
+namespace Ytake\HackDomainKata\Entity\Operation;
 
 /**
  * @since Interface available since Release 1.4.0
  */
-interface ServiceInterface
-{
+interface IdentifiableInterface<T> extends OperationInterface {
+
+  public function getId(): T;
 }

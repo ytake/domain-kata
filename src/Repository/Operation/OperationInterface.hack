@@ -1,6 +1,6 @@
-<?php
 /*
  * Copyright (c) 2014 KUBO Atsuhiro <kubo@iteman.jp>,
+ *               2020 TAKEZAWA Yuuki <yuuki.takezawa@comnect.jp.net>,
  * All rights reserved.
  *
  * This file is part of Domain Kata.
@@ -10,19 +10,10 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace PHPMentors\DomainKata\Repository;
+namespace Ytake\HackDomainKata\Repository\Operation;
 
-use PHPMentors\DomainKata\Entity\EntityInterface;
-
-interface RepositoryInterface
-{
-    /**
-     * @param EntityInterface $entity
-     */
-    public function add(EntityInterface $entity);
-
-    /**
-     * @param EntityInterface $entity
-     */
-    public function remove(EntityInterface $entity);
+/**
+ * @since Interface available since Release 1.2.0
+ */
+interface OperationInterface extends \Ytake\HackDomainKata\Operation\OperationInterface {
 }
